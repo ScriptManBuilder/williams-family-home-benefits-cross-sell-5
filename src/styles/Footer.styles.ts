@@ -231,7 +231,7 @@ export const ContactCard = styled.div`
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(109, 40, 217, 0.02) 100%);
   border: 1px solid rgba(124, 58, 237, 0.12);
   border-radius: 8px;
-  padding: 1.25rem 1rem;
+  padding: 1rem 0.875rem;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 
@@ -243,7 +243,7 @@ export const ContactCard = styled.div`
 `;
 
 export const ContactItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -255,13 +255,13 @@ export const ContactLabel = styled.div`
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
   font-weight: 600;
 `;
 
 export const ContactValue = styled.a`
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -269,10 +269,11 @@ export const ContactValue = styled.a`
   font-weight: 500;
   transition: all 0.2s ease;
   word-break: break-all;
+  line-height: 1.3;
 
   svg {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     color: #DC2626;
     flex-shrink: 0;
   }

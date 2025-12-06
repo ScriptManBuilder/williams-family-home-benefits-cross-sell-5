@@ -68,6 +68,7 @@ export const HeroContent = styled.div`
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  text-align: center;
 `;
 
 export const Tagline = styled.p`
