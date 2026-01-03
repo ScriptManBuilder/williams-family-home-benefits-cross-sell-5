@@ -33,15 +33,12 @@ const MerchantDisclosurePage: React.FC = () => {
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
               Legal Business Name:
             </LegalParagraph>
-            <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME}
-            </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
-              Business Address:
-            </LegalParagraph>
-            <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_ADDRESS}
-            </LegalParagraph>
+            <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+              <img 
+                src="/company_adress.png" 
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               Contact Information:
             </LegalParagraph>
@@ -99,10 +96,10 @@ const MerchantDisclosurePage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Primary Descriptor:</strong> "WILLIAMS FAMILY" or "WMS*[Family Service]"
+                <strong>Primary Descriptor:</strong> "WS" or "WMS*[Family Service]"
               </LegalListItem>
               <LegalListItem>
-                <strong>Alternative Descriptors:</strong> May include "WILLIAMS PERKS" or service provider names for specific claims
+                <strong>Alternative Descriptors:</strong> May include "WS" or service provider names for specific claims
               </LegalListItem>
               <LegalListItem>
                 <strong>Phone Number:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear on your statement for customer service inquiries
@@ -283,8 +280,7 @@ const MerchantDisclosurePage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Step 1 - Contact Us:</strong> Reach out to our customer service team at {process.env.REACT_APP_EMAIL_SUPPORT} 
-                or {process.env.REACT_APP_PHONE_DISPLAY} with your concerns
+                <strong>Step 1 - Contact Us:</strong> Reach out to our customer service team at {process.env.REACT_APP_EMAIL_SUPPORT}                 or {process.env.REACT_APP_PHONE_DISPLAY} with your concerns
               </LegalListItem>
               <LegalListItem>
                 <strong>Step 2 - Investigation:</strong> We will investigate your dispute and respond within 5-7 business days
@@ -432,20 +428,14 @@ const MerchantDisclosurePage: React.FC = () => {
             <LegalParagraph>
               For any questions about this Service Disclosure or our family & home benefits services:
             </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
-              {process.env.REACT_APP_COMPANY_NAME}
-            </LegalParagraph>
+            <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+              <img 
+                src="/company_info.png"                
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
             <LegalParagraph style={{ fontWeight: 600 }}>
               Attention: Customer Service Department
-            </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600 }}>
-              {process.env.REACT_APP_COMPANY_ADDRESS}
-            </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600 }}>
-              Email: {process.env.REACT_APP_EMAIL_SUPPORT}
-            </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600 }}>
-              Phone: {process.env.REACT_APP_PHONE_DISPLAY}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               Business Hours: Monday - Friday, 9:00 AM - 6:00 PM EST
